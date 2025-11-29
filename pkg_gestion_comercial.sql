@@ -6,7 +6,7 @@
 */
 
 -- =========================================================
--- 1. CREACIÓN DE TABLAS (Infraestructura de Datos)
+-- 1. CREACIÓN DE TABLAS 
 -- =========================================================
 
 CREATE TABLE clientes (
@@ -36,7 +36,7 @@ INSERT INTO productos VALUES (101, 'Licencia Software', 50, 300);
 COMMIT;
 
 -- =========================================================
--- 2. ESPECIFICACIÓN DEL PAQUETE (La "Fachada")
+-- 2. ESPECIFICACIÓN DEL PAQUETE 
 -- =========================================================
 
 CREATE OR REPLACE PACKAGE pkg_gestion_comercial IS
@@ -52,7 +52,7 @@ END pkg_gestion_comercial;
 /
 
 -- =========================================================
--- 3. CUERPO DEL PAQUETE (La Lógica de Negocio)
+-- 3. CUERPO DEL PAQUETE 
 -- =========================================================
 
 CREATE OR REPLACE PACKAGE BODY pkg_gestion_comercial IS
@@ -135,3 +135,4 @@ CREATE OR REPLACE PACKAGE BODY pkg_gestion_comercial IS
 END pkg_gestion_comercial;
 
 /
+
